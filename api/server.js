@@ -20,7 +20,7 @@ server.get('/', (req, res) => {
 });
 
 server.use ((err, req, res, next) =>{ // eslint-disable-line
-  res.statsu(500).json({
+  res.status(500).json({
       message: err.message, 
       stack: err.stack, 
   })
