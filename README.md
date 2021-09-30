@@ -39,3 +39,5 @@ Your assignment page on Canvas should contain instructions for submitting this p
 - Research how to avoid storing passwords as is in your array database.
 - Research how to grant access to `GET /api/users` only those clients that are registered and logged in.
 - Create a front-end piece inside the project containing a register/login form and the means to display users.
+
+test
