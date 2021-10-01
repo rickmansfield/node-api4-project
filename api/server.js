@@ -9,15 +9,15 @@ server.use(express.json());
 server.use(cors())
 server.use(logger);
 
-server.get('/api/hello', (req, res) =>{
+server.get('/', (req, res) =>{
   res.json({ message: 'api is working' })
 })
 
 server.use('/api/users', usersRouter)
 
-server.get('/', (req, res) => {
-  res.send(`<h2>Let's write some middleware!</h2>`);
-});
+// server.get('/', (req, res) => {
+//   res.send(`<h2>Let's write some middleware!</h2>`);
+// });
 
 server.use ((err, req, res, next) =>{ // eslint-disable-line
   res.status(500).json({
