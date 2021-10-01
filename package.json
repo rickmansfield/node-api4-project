@@ -11,6 +11,9 @@
     "heroku-postbuild": "npm i"
 
   },
+  "engines": {
+    "node": "14.18.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rickmansfield/node-api4-project.git"
