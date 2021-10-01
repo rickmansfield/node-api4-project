@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "server": "nodemon index.js",
-    "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run"
+    "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run",
+    "heroku-postbuild": "npm i"
+
   },
   "repository": {
     "type": "git",
